@@ -7,7 +7,7 @@ class Header extends Component
     {
         return(
             <div>
-
+                안녕
             </div>
         );
     }
@@ -19,7 +19,7 @@ class App extends Component
     {
         return(
             <div>
-
+                <Header/>
             </div>
         );
     }
