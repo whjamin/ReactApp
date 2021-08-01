@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.main-container
+{
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-container
+{
+    color: #5f6368;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    margin: 15px;
+    top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-container nav
+{
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-container a
+{
+    color: #5f6368;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-size: 0.85em;
+    margin-left: 25px;
+    vertical-align: middle;
 }
 
-.App-link {
-  color: #61dafb;
+.body-container
+{
+    margin-top: 255px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body-wrap
+{
+    width: 700px; 
+    text-align: center;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.input-wrap
+{
+    margin: 20px;
+}
+
+.input-box
+{
+    width: 580px;
+    height: 20px;
+    border-radius: 50px;
+    padding: 12px 0;
+    border: 1px solid #d8dadd;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+
+.search
+{
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+}
+
+.voice
+{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.keyboard
+{
+    margin-right: 12px;
+}
+
+input
+{
+    border: none;
+    width: 400px;
+    margin-right: 40px;
+    font-size: 17px;
+    padding: 1px 0;
+}
+
+input:focus 
+{
+    outline: none;
+}
+
+input:hover ~ .input-box
+{
+    box-shadow: 1px 5px 5px 5px;
+}
+
+input:focus ~ .input-box
+{
+    box-shadow: 1px 5px 5px 5px;
+}
+
+
+.footer-container
+{
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
 }
